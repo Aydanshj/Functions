@@ -7,18 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="demo">
-        <h1>Credit Calculator</h1>
-        <label for="credit amount"></label >
-        <input id="man" type="number" placeholder="AZN">
-        <label for="Credit Period"></label>
-        <input id="mounth" type="number" placeholder="Mounth">
-        <label for="interest rate"></label>
-        <input id="percentage"  type="number" placeholder="%">
-         <hr>
-        <button onclick="Crd()">Order</button>
-        <h2 id="monthly"></h2>
-        <h2 id="sum"></h2>
+  <div class="calculator">
+        <h1>Loan Calculator</h1>
+        <p>Amount (AZN)     :
+            <input id="amount" type="number"
+            onchange="Calculate()">
+        </p>
+  
+        <p>Interest Rate :
+            <input id="rate" type="number"
+            onchange="Calculate()">
+        </p>
+  
+        <p>Months to Pay :
+            <input id="months" type="number"
+            onchange="Calculate()">
+        </p>
+  
+        <h2 id="total"></h2>
     </div>
 
     <script src="app.jss"></script>
